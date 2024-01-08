@@ -1,0 +1,28 @@
+@import 'null';
+
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+// Общие стили
+@import 'common';
+// Стили страницы
+@import 'home.scss';
+@import 'footer';
+// Стили карточек
+@import 'components/active-card';
+@import 'components/thanks-card';
+// Стили форм
+@import 'base/forms/button';

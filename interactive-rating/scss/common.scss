@@ -1,0 +1,29 @@
+.card--rating {
+  padding: 30px 40px 30px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(to bottom, #242b35, #14171b);
+  border-radius: 25px;
+}
+.title--rating {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.text--rating {
+  color: hsl(216, 12%, 54%);
+  line-height: 22px;
+}
+.circle--rating {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1d222a;
+  border-radius: 50%;
+}

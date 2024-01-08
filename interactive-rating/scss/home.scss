@@ -1,0 +1,35 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  &__container {
+    max-width: 410px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 20px;
+  }
+}
+
+.rating {
+  &__active {
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__thanks {
+    padding: 45px 40px 50px 30px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+      display: flex;
+    }
+  }
+}
