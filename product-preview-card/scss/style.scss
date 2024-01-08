@@ -1,0 +1,22 @@
+@import 'null';
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+@import 'home';
+@import 'components/card';
+@import 'base/forms/button';
+@import 'footer';

@@ -1,0 +1,84 @@
+.card {
+  &__image {
+    flex: 0 0 50%;
+
+    background-image: url('../img/desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+
+    @media (max-width: 580px) {
+      flex: 0 0 240px;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+
+  &__body {
+    padding: 35px 30px;
+
+    @media (max-width: 580px) {
+      padding: 30px 25px;
+    }
+  }
+
+  &__suptitle {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+  }
+
+  &__title {
+    padding: 20px 0px 0px 0px;
+
+    font-family: 'Fraunces';
+    font-size: 35px;
+    font-weight: 700;
+
+    @media (max-width: 580px) {
+      padding: 10px 0px 0px 0px;
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    padding: 20px 0px 30px 0px;
+
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+
+    @media (max-width: 580px) {
+      padding: 20px 0px 25px 0px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    @media (max-width: 580px) {
+      column-gap: 15px;
+    }
+  }
+
+  &__btn {
+    margin: 25px 0px 0px 0px;
+  }
+}
+
+.price {
+  &__current {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    font-weight: 700;
+
+    @media (max-width: 580px) {
+      font-size: 32px;
+    }
+  }
+
+  &__old {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
+}

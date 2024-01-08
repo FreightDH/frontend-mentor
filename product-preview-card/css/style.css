@@ -1,0 +1,255 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #000;
+  line-height: 1;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__container {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0px 15px;
+}
+.content__body {
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content__card {
+  display: flex;
+  border-radius: 10px;
+  background-color: #fff;
+}
+@media (max-width: 580px) {
+  .content__card {
+    flex-direction: column;
+  }
+}
+
+.card__image {
+  flex: 0 0 50%;
+  background-image: url("../img/desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+@media (max-width: 580px) {
+  .card__image {
+    flex: 0 0 240px;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+.card__body {
+  padding: 35px 30px;
+}
+@media (max-width: 580px) {
+  .card__body {
+    padding: 30px 25px;
+  }
+}
+.card__suptitle {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 3px;
+}
+.card__title {
+  padding: 20px 0px 0px 0px;
+  font-family: "Fraunces";
+  font-size: 35px;
+  font-weight: 700;
+}
+@media (max-width: 580px) {
+  .card__title {
+    padding: 10px 0px 0px 0px;
+    font-size: 32px;
+  }
+}
+.card__text {
+  padding: 20px 0px 30px 0px;
+  color: hsl(228, 12%, 48%);
+  line-height: 22px;
+}
+@media (max-width: 580px) {
+  .card__text {
+    padding: 20px 0px 25px 0px;
+  }
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media (max-width: 580px) {
+  .card__price {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+.card__btn {
+  margin: 25px 0px 0px 0px;
+}
+
+.price__current {
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-size: 35px;
+  font-weight: 700;
+}
+@media (max-width: 580px) {
+  .price__current {
+    font-size: 32px;
+  }
+}
+.price__old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 60px;
+  height: 45px;
+  color: #fff;
+  line-height: 45px;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  transition: all 0.3s ease 0s;
+}
+.btn:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+@media (max-width: 580px) {
+  .btn {
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+}
+.btn span {
+  background: url("../img/cart.svg") left no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+@media (max-width: 580px) {
+  .btn span {
+    padding: 0px 0px 0px 30px;
+  }
+}
+
+.footer {
+  padding: 30px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 14px;
+}
+.footer__copyright a {
+  position: relative;
+}
+.footer__copyright a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
