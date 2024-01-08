@@ -1,0 +1,22 @@
+@import 'null';
+
+body {
+  background: url('../img/bg-desktop.png') center/cover no-repeat, hsl(0, 100%, 74%);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+@import 'home';
+@import 'base/components/form';
+@import 'base/forms/button';
+@import 'footer';
