@@ -1,0 +1,21 @@
+@import 'null';
+
+body {
+  background: linear-gradient(to bottom, #9d4ae5, #5146e0);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+@import 'home';
+@import 'components/faq';
+@import 'footer';

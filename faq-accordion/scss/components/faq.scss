@@ -1,0 +1,152 @@
+.faq {
+  &__images {
+    flex: 0 0 50%;
+    position: relative;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1020px) {
+      margin: -50px 0px 0px 0px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+
+    @media (max-width: 1020px) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    padding: 40px 0px 0px 0px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: hsl(240, 5%, 91%);
+    }
+
+    &:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+
+    &.active {
+      > .item__title {
+        font-weight: 700;
+
+        &::after {
+          transition: all 0.3s ease 0s;
+          transform: rotate(180deg);
+        }
+      }
+
+      > .item__text {
+        padding: 0px 0px 15px 0px;
+      }
+    }
+  }
+}
+
+.images {
+  &__wrapper {
+    overflow: hidden;
+
+    @media (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  &__woman {
+    position: relative;
+    top: 0px;
+    left: -85px;
+  }
+
+  &__cube {
+    position: absolute;
+    top: 130px;
+    left: -95px;
+    z-index: 5;
+
+    @media (max-width: 1020px) {
+      display: none;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -45px;
+    right: 85px;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.woman--mobile {
+  display: none;
+
+  @media (max-width: 1020px) {
+    display: block;
+    position: relative;
+    top: -110px;
+    left: 0px;
+
+    img {
+      width: 240px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.item {
+  &__title {
+    padding: 0px 0px 15px 0px;
+    position: relative;
+    transition: all 0.2s ease 0s;
+
+    font-size: 14px;
+
+    &::after {
+      content: url('../img/arrow.svg');
+      position: absolute;
+      top: 0;
+      right: 15px;
+      transition: all 0.3s ease 0s;
+    }
+
+    &:hover {
+      color: hsl(14, 88%, 65%);
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+
+    color: hsl(240, 6%, 50%);
+    line-height: 15px;
+  }
+}
