@@ -1,7 +1,9 @@
 @import 'null';
 
 body {
-  background: url('../img/bg-desktop.png') center/cover no-repeat, hsl(0, 100%, 74%);
+  background:
+    url('../img/bg-desktop.png') center/cover no-repeat,
+    hsl(0, 100%, 74%);
 }
 
 .wrapper {

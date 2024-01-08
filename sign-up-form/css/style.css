@@ -29,7 +29,7 @@ body {
 body {
   color: #fff;
   line-height: 1;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 16px;
 }
 
@@ -78,7 +78,9 @@ h6 {
 }
 
 body {
-  background: url("../img/bg-desktop.png") center/cover no-repeat, hsl(0, 100%, 74%);
+  background:
+    url('../img/bg-desktop.png') center/cover no-repeat,
+    hsl(0, 100%, 74%);
 }
 
 .wrapper {
@@ -204,8 +206,8 @@ body {
   font-size: 14px;
   font-weight: 600;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
 }
@@ -236,7 +238,7 @@ body {
 .form__input.--err {
   position: relative;
   border: 1px solid hsl(0, 100%, 74%);
-  background: url("../img/error.svg") 98% 50%/25px no-repeat;
+  background: url('../img/error.svg') 98% 50%/25px no-repeat;
 }
 .form__input.--err + .form__error {
   display: block;
@@ -309,7 +311,7 @@ body {
   position: relative;
 }
 .footer__copyright a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;

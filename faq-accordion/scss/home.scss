@@ -31,7 +31,9 @@
 
     display: flex;
 
-    background: url('../img/shadow-desktop.svg') -530px -260px/100% no-repeat, #fff;
+    background:
+      url('../img/shadow-desktop.svg') -530px -260px/100% no-repeat,
+      #fff;
     border-radius: 20px;
 
     @media (max-width: 1020px) {
@@ -39,7 +41,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: url('../img/shadow-mobile.svg') 39.5px -6px / 75% no-repeat, #fff;
+      background:
+        url('../img/shadow-mobile.svg') 39.5px -6px / 75% no-repeat,
+        #fff;
     }
   }
 }

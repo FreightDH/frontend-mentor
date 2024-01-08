@@ -29,7 +29,7 @@ body {
 body {
   color: #000;
   line-height: 1;
-  font-family: "Kumbh Sans";
+  font-family: 'Kumbh Sans';
   font-size: 12px;
 }
 
@@ -120,7 +120,9 @@ body {
 .content__faq {
   padding: 70px 100px 80px 0px;
   display: flex;
-  background: url("../img/shadow-desktop.svg") -530px -260px/100% no-repeat, #fff;
+  background:
+    url('../img/shadow-desktop.svg') -530px -260px/100% no-repeat,
+    #fff;
   border-radius: 20px;
 }
 @media (max-width: 1020px) {
@@ -129,7 +131,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../img/shadow-mobile.svg") 39.5px -6px/75% no-repeat, #fff;
+    background:
+      url('../img/shadow-mobile.svg') 39.5px -6px/75% no-repeat,
+      #fff;
   }
 }
 
@@ -162,7 +166,7 @@ body {
   position: relative;
 }
 .faq__item::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -220,7 +224,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .woman--mobile {
@@ -237,7 +241,7 @@ body {
     width: 240px;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -248,7 +252,7 @@ body {
   font-size: 14px;
 }
 .item__title::after {
-  content: url("../img/arrow.svg");
+  content: url('../img/arrow.svg');
   position: absolute;
   top: 0;
   right: 15px;
@@ -280,7 +284,7 @@ body {
   position: relative;
 }
 .footer__copyright a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;

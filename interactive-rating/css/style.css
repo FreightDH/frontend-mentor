@@ -29,7 +29,7 @@ body {
 body {
   color: #fff;
   line-height: 1;
-  font-family: "Overpass";
+  font-family: 'Overpass';
   font-size: 15px;
 }
 
@@ -161,7 +161,7 @@ body {
   position: relative;
 }
 .footer__copyright a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -172,7 +172,7 @@ body {
 
 .active__icon img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .active__title {
   padding: 35px 0px 0px 0px;
