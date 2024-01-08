@@ -1,0 +1,21 @@
+@import 'null';
+
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+@import 'home';
+@import 'components/card';
+@import 'footer';
